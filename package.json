@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "lerna": "^3.4.3"
+  },
+  "name": "learning-lerna",
+  "description": "",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start": "node ./packages/usage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
