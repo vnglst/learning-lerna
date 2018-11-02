@@ -66,6 +66,6 @@ So in our case, after this all packages will have `0.0.2` as a version number. A
 
 If you don't want Lerna to automatically update all your packages to the same version number, you can set this in the `lerna.json` config file. Instead of using `version: "0.0.2"` you'd set it to `version: "independent"`.
 
-Now if you make a small change in one of the packages (for instance beta), Lerna will only bump that package's version.
+Now if you make a small change in one of the packages (for instance beta), Lerna will only bump that package's version if you run `lerna publish`.
 
 Note: In this case the version of package `usage` will also be bumped (to `0.0.3`) since that package has a dependency on `beta` and it's `package.json` is automatically updated by Lerna.
