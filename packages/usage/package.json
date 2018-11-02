@@ -1,6 +1,6 @@
 {
   "name": "vnglst-usage",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "vnglst-alpha": "^0.0.2",
-    "vnglst-beta": "^0.0.2"
+    "vnglst-beta": "^0.0.3"
   }
 }
