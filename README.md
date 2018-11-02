@@ -1,8 +1,10 @@
 # Learning Lerna
 
+A simple pratical introduction to Lerna.
+
 ## Symlinking packages
 
-Clone this repo. Install dependencies:
+Clone this repo (make sure you change the package names, e.g. search and replace `vnglst/`). Install dependencies:
 
 ```sh
 yarn
@@ -20,11 +22,11 @@ Doesn't work! Packages not found. 💩
 npx lerna bootstrap
 ```
 
-Packages are symlinked. If you now run `yarn start` it should work. 🎉
+Packages are symlinked. If you run `yarn start` now it should work. 🎉
 
 ## Publishing packages
 
-But what if you want to publish packages? For this your work has to be committed and pushed to a repo. Then you run:
+But what if you want to publish packages? For this your work has to be committed and pushed to a repo (and you have to be logged in to npm). Then you run:
 
 ```sh
 npx lerna publish
@@ -69,3 +71,7 @@ If you don't want Lerna to automatically update all your packages to the same ve
 Now if you make a small change in one of the packages (for instance beta), Lerna will only bump that package's version if you run `lerna publish`.
 
 Note: In this case the version of package `usage` will also be bumped (to `0.0.3`) since that package has a dependency on `beta` and it's `package.json` is automatically updated by Lerna.
+
+## Third party dependencies
+
+Now what about third party depdencies, like for instance `react`? How would you add those as a dependency to your packages -- and keep those up to date?
