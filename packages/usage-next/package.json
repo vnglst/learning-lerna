@@ -1,0 +1,21 @@
+{
+  "name": "usage-next",
+  "version": "0.0.1",
+  "description": "Example package that uses the most recent version of the packages in the monorepo.",
+  "author": "Koen van Gilst <koen.vangilst@gmail.com>",
+  "homepage": "https://github.com/vnglst/learning-lerna#readme",
+  "license": "MIT",
+  "main": "usage-next.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnglst/learning-lerna.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "react": "^16.6.0",
+    "vnglst-alpha": "^0.0.2",
+    "vnglst-beta": "^0.0.3"
+  }
+}
