@@ -107,3 +107,9 @@ lerna create usage-next
 Manually add the dependencies, copy the code from the `usage` package and run `lerna bootstrap` again to install/symlink the dependencies of our new package.
 
 We now have to packages `usage` and `usage-next` with the exactly the same dependencies. Let's change that.
+
+Upgrade the implementation of the `alpha` and `beta` packages. Use `lerna publish` to publish those updates.
+
+Note: this will also upgrade and publish both `usage` and `usage-next`, since Lerna automatically also updates any packages that depend on `alpha` and `beta`.
+
+To avoid this... ??
