@@ -93,3 +93,7 @@ In the default mode this will add `react` as a depdency to **all** packages and 
 ```
 
 With hoist enabled Lerna will symlink the `node_modules` folders of the packages to `node_modules` in the root folder.
+
+## Version management
+
+A common reason to introduce packages in a monorepo is version management. With lerna you can choose to let some parts of your codebase use a different version of a certain package. How does this work with lerna?
