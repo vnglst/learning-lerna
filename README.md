@@ -99,3 +99,11 @@ With hoist enabled Lerna will symlink the `node_modules` folders of the packages
 A common reason to introduce packages in a monorepo is version management. With lerna you can choose to let some parts of your codebase use a different version of a certain package. How does this work with lerna?
 
 Start with adding a new package. Let's call it `usage-next`.
+
+```sh
+lerna create usage-next
+```
+
+Manually add the dependencies, copy the code from the `usage` package and run `lerna bootstrap` again to install/symlink the dependencies of our new package.
+
+We now have to packages `usage` and `usage-next` with the exactly the same dependencies. Let's change that.

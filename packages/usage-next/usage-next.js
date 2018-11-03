@@ -1,7 +1,3 @@
-'use strict';
-
-module.exports = usageNext;
-
-function usageNext() {
-    // TODO
-}
+var alpha = require('vnglst-alpha')
+var beta = require('vnglst-beta')
+console.log('next: ' + alpha + ' ' + beta)

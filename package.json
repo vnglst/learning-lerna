@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "start": "node ./packages/usage"
+    "start": "node ./packages/usage",
+    "start-next": "node ./packages/usage-next"
   },
   "keywords": [],
   "author": "",

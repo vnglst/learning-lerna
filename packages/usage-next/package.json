@@ -1,5 +1,5 @@
 {
-  "name": "usage-next",
+  "name": "vnglst-usage-next",
   "version": "0.0.1",
   "description": "Example package that uses the most recent version of the packages in the monorepo.",
   "author": "Koen van Gilst <koen.vangilst@gmail.com>",
