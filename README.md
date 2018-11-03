@@ -112,4 +112,10 @@ Upgrade the implementation of the `alpha` and `beta` packages. Use `lerna publis
 
 Note: this will also upgrade and publish both `usage` and `usage-next`, since Lerna automatically also updates any packages that depend on `alpha` and `beta`.
 
-To avoid this... ??
+To avoid this... ?? (apparently it's not easy to avoid this and that's intentional, see for instance this issue: https://github.com/lerna/lerna/issues/1403)
+
+What you can do is lock a dependency to a certain version. Lerna will respect that and it will no longer do automatic upgrades of that 'locked' package.
+
+## Maintaining mutiple versions
+
+Probably not possible, or very difficult within monorepo. Solution: move it outside of monorepo?
