@@ -74,4 +74,22 @@ Note: In this case the version of package `usage` will also be bumped (to `0.0.3
 
 ## Third party dependencies
 
-Now what about third party depdencies, like for instance `react`? How would you add those as a dependency to your packages -- and keep those up to date?
+Now what about third party depdencies, like for instance `react`? How would you add those as a dependency to your packages -- and keep those up to date? For this Lerna offers the `add` command:
+
+```sh
+lerna add react
+```
+
+In the default mode this will add `react` as a depdency to **all** packages and installs it in **all** `node_modules` folder. This will lead to a lot of duplicate packages in your monorepo. To avoid this you can set the option hoise to true in your `lerna.json`. Resulting in the following:
+
+```json
+{
+  "lerna": "",
+  "version": "independent",
+  "bootstrap": {
+    "hoist": true
+  }
+}
+```
+
+With hoist enabled Lerna will symlink the `node_modules` folders of the packages to `node_modules` in the root folder.

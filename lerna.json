@@ -1,4 +1,7 @@
 {
   "lerna": "",
-  "version": "independent"
+  "version": "independent",
+  "bootstrap": {
+    "hoist": true
+  }
 }
